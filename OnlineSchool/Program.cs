@@ -13,6 +13,7 @@ namespace OnlineSchool
         static void Main(string[] args)
         {
             Login_ValidInfo();
+            Login_InvilidInfo();
         }
 
         /* 1. login with valid user name and password, Remember me is selected
@@ -51,6 +52,42 @@ namespace OnlineSchool
             try
             {
                 IWebElement imgAvatar = driver.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[1]/a/img"));
+            }
+            catch (Exception e)
+            {
+            }
+            // Close
+            driver.Quit();
+        }
+
+        /*2. login with invalid user name and password
+          Expected Result(Assertion):login is unsuccessful, error message is seen */
+        private static void Login_InvilidInfo()
+        {
+            // Open
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "http://lyratesting2.co.nz/";
+            IWebElement webElement = null;
+            webElement = driver.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[2]/a"));
+            webElement.Click();
+            // Username
+            webElement = driver.FindElement(By.Id("login_username"));
+            webElement.Click();
+            webElement.Clear();
+            webElement.SendKeys("test");
+            // Password
+            webElement = driver.FindElement(By.Id("login_password"));
+            webElement.Click();
+            webElement.Clear();
+            webElement.SendKeys("Test");
+            // Click Login
+            webElement = driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div/div[2]/form/div[4]/button"));
+            webElement.Click();
+            // Check Error Notification
+            // Check avatar
+            try
+            {
+                IWebElement imgAvatar = driver.FindElement(By.PartialLinkText("用户名或密码错误"));
             }
             catch (Exception e)
             {
