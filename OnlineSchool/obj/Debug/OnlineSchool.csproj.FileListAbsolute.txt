@@ -1,0 +1,12 @@
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\OnlineSchool.exe.config
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\OnlineSchool.exe
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\OnlineSchool.pdb
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\WebDriver.dll
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\WebDriver.Support.dll
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\WebDriver.xml
+D:\Projects\Web\OnlineSchool\OnlineSchool\bin\Debug\WebDriver.Support.xml
+D:\Projects\Web\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csprojAssemblyReference.cache
+D:\Projects\Web\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CoreCompileInputs.cache
+D:\Projects\Web\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.csproj.CopyComplete
+D:\Projects\Web\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.exe
+D:\Projects\Web\OnlineSchool\OnlineSchool\obj\Debug\OnlineSchool.pdb
