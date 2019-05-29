@@ -71,7 +71,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Browser.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="LoginPage.cs" />
+    <Compile Include="Pages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
