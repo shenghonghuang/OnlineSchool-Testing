@@ -88,7 +88,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary_PO\ClassLibrary.csproj">
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
       <Project>{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}</Project>
       <Name>ClassLibrary</Name>
     </ProjectReference>
