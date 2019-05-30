@@ -10,6 +10,9 @@ namespace ClassLibrary_PO
     public class LoginPage
     {
         private IWebElement webElement = null;
+        static string PageUrl = "http://lyratesting2.co.nz/login";
+        static string Title = "登录 - EduSoho网络课堂 - 三分钟帮助您建设功能完备的网校！ - Powered By EduSoho";
+
         public void LoginWithAccount(string username, string password)
         {
             // Username
@@ -44,6 +47,18 @@ namespace ClassLibrary_PO
             }
             catch (Exception e)
             {
+            }
+        }
+
+        public void CheckTitleAndUrl()
+        {
+            if (Title == Browser.Driver_Web.Title && PageUrl == Browser.Driver_Web.Url)
+            {
+                Console.WriteLine("Successful");
+            }
+            else
+            {
+                Console.WriteLine("Unsuccessful");
             }
         }
     }

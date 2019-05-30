@@ -25,6 +25,15 @@ namespace UnitTestProject1
             Pages.LoginPage.CheckErrorText();
         }
 
+        [TestMethod]
+        public void CanLogoutWhenLogined()
+        {
+            CanLoginWithValidInfo();
+            Pages.HomePage.MouseMoveToAvatar();
+            Pages.HomePage.ClickLogout();
+            Pages.LoginPage.CheckTitleAndUrl();
+        }
+
         [TestCleanup]
         public void CleanUp()
         {

@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,19 @@ namespace ClassLibrary_PO
             catch (Exception e)
             {
             }
+        }
+
+        public void MouseMoveToAvatar()
+        {
+            webElement = Browser.Driver_Web.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[1]/a/img"));
+            Actions action = new Actions(Browser.Driver_Web);
+            action.MoveToElement(webElement).Perform();
+        }
+
+        public void ClickLogout()
+        {
+            webElement = Browser.Driver_Web.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[1]/ul/li[9]/a"));
+            webElement.Click();
         }
     }
 }
