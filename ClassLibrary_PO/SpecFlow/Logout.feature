@@ -12,3 +12,4 @@ Scenario: Logout if Logined
 	Then I move mouse on the avatar
 	Then I click Logout
 	Then I can see the login page
+	Then I close the browser

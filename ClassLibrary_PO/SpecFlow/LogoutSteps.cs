@@ -1,4 +1,4 @@
-﻿using ClassLibrary;
+﻿using ClassLibrary.PageObjects;
 using System;
 using TechTalk.SpecFlow;
 

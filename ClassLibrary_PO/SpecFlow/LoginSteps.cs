@@ -1,5 +1,5 @@
 ﻿using System;
-using ClassLibrary;
+using ClassLibrary.PageObjects;
 using TechTalk.SpecFlow;
 
 namespace ClassLibrary_Specflow
