@@ -1,14 +1,17 @@
-﻿using System;
-using ClassLibrary_PO;
+﻿using ClassLibrary_PO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace UnitTestProject1
 {
     [TestClass]
-    public class Login
+    public class Logout
     {
-        [TestMethod]
-        public void CanLoginWithValidInfo()
+        public void Login()
         {
             Pages.HomePage.Goto();
             Pages.HomePage.ClickLogin();
@@ -17,12 +20,12 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void CannotLoginWithInvalidInfo()
+        public void CanLogoutWhenLogined()
         {
-            Pages.HomePage.Goto();
-            Pages.HomePage.ClickLogin();
-            Pages.LoginPage.LoginWithAccount("test", "Test");
-            Pages.LoginPage.CheckErrorText();
+            Login();
+            Pages.HomePage.MouseMoveToAvatar();
+            Pages.HomePage.ClickLogout();
+            Pages.LoginPage.CheckTitleAndUrl();
         }
 
         [TestCleanup]
