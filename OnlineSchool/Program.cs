@@ -13,9 +13,12 @@ namespace OnlineSchool
     {
         static IWebDriver driver = new FirefoxDriver();
         static IWebElement webElement = null;
+        static string Title_LoginPage = "登录 - EduSoho网络课堂 - 三分钟帮助您建设功能完备的网校！ - Powered By EduSoho";
+        static string Url_LoginPage = "http://lyratesting2.co.nz/login";
+
         static void Main(string[] args)
         {
-            Login_ValidInfo();
+            Logout();
         }
 
         /* 1. login with valid user name and password, Remember me is selected
@@ -94,6 +97,22 @@ namespace OnlineSchool
             driver.Quit();
         }
 
-      
+        private static void Logout()
+        {
+            Actions action = new Actions(driver);
+            Login_ValidInfo();
+            webElement = driver.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[1]/a/img"));
+            action.MoveToElement(webElement).Perform();
+            webElement = driver.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[1]/ul/li[9]/a"));
+            webElement.Click();
+            if (Title_LoginPage == driver.Title && Url_LoginPage == driver.Url)
+            {
+                Console.WriteLine("Successful");
+            }
+            else
+            {
+                Console.WriteLine("Unsuccessful");
+            }
+        }
     }
 }
