@@ -1,5 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,11 @@ namespace OnlineSchool
 {
     class Program
     {
+        static IWebDriver driver = new FirefoxDriver();
+        static IWebElement webElement = null;
         static void Main(string[] args)
         {
             Login_ValidInfo();
-            Login_InvilidInfo();
         }
 
         /* 1. login with valid user name and password, Remember me is selected
@@ -21,9 +23,8 @@ namespace OnlineSchool
         private static void Login_ValidInfo()
         {
             // Open
-            IWebDriver driver = new FirefoxDriver();
             driver.Url = "http://lyratesting2.co.nz/";
-            IWebElement webElement = null;
+            //IWebElement webElement = null;
             webElement = driver.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[2]/a"));
             webElement.Click();
             // Username
@@ -55,9 +56,8 @@ namespace OnlineSchool
             }
             catch (Exception e)
             {
+                Console.WriteLine("NNNNNNNN");
             }
-            // Close
-            driver.Quit();
         }
 
         /*2. login with invalid user name and password
@@ -65,9 +65,7 @@ namespace OnlineSchool
         private static void Login_InvilidInfo()
         {
             // Open
-            IWebDriver driver = new FirefoxDriver();
             driver.Url = "http://lyratesting2.co.nz/";
-            IWebElement webElement = null;
             webElement = driver.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[2]/a"));
             webElement.Click();
             // Username
@@ -95,5 +93,7 @@ namespace OnlineSchool
             // Close
             driver.Quit();
         }
+
+      
     }
 }
