@@ -5,7 +5,10 @@
 
 @Logout
 Scenario: Logout if Logined
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+	Given I am in home page
+	Then I click login
+	Then I input valid username and password, and make sure i have checked remember me
+	Then I can see the avatar on home page
+	Then I move mouse on the avatar
+	Then I click Logout
+	Then I can see the login page
