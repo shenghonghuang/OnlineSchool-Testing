@@ -87,9 +87,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary_PO\ClassLibrary_PO.csproj">
+    <ProjectReference Include="..\ClassLibrary_PO\ClassLibrary.csproj">
       <Project>{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}</Project>
-      <Name>ClassLibrary_PO</Name>
+      <Name>ClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

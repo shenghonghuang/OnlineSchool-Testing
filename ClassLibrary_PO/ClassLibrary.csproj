@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8DF9645B-2E7B-4BF5-A7B4-D5F859957D25}</ProjectGuid>
+    <ProjectGuid>{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary_Specflow</RootNamespace>
-    <AssemblyName>ClassLibrary_Specflow</AssemblyName>
+    <RootNamespace>ClassLibrary</RootNamespace>
+    <AssemblyName>ClassLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -71,27 +71,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login.feature.cs">
+    <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="SpecFlow\Login.feature.cs">
+      <DependentUpon>Login.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Login.feature</DependentUpon>
     </Compile>
-    <Compile Include="LoginSteps.cs" />
+    <Compile Include="PageObjects\LoginPage.cs" />
+    <Compile Include="SpecFlow\LoginSteps.cs" />
+    <Compile Include="PageObjects\Pages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Login.feature">
+    <None Include="SpecFlow\Login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Login.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary_PO\ClassLibrary_PO.csproj">
-      <Project>{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}</Project>
-      <Name>ClassLibrary_PO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

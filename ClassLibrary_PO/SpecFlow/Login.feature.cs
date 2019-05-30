@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ClassLibrary_Specflow
+namespace ClassLibrary.SpecFlow
 {
     using TechTalk.SpecFlow;
     
