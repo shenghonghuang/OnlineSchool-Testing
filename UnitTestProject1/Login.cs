@@ -1,5 +1,5 @@
 ﻿using System;
-using ClassLibrary_PO;
+using ClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestProject1
