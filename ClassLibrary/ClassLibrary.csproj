@@ -54,6 +54,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\ProfilePage.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="SpecFlow\Login.feature.cs">
       <DependentUpon>Login.feature</DependentUpon>
@@ -88,6 +90,12 @@
       <DependentUpon>Logout.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\LogoutSteps.cs" />
+    <Compile Include="SpecFlow\Profile.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Profile.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SpecFlow\ProfileSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -99,6 +107,10 @@
     <None Include="SpecFlow\Logout.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Logout.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SpecFlow\Profile.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Profile.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
