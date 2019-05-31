@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchool", "OnlineSchool\OnlineSchool.csproj", "{FD836C5A-6961-4775-A66A-5EFCAB56B3F2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD836C5A-6961-4775-A66A-5EFCAB56B3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD836C5A-6961-4775-A66A-5EFCAB56B3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD836C5A-6961-4775-A66A-5EFCAB56B3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD836C5A-6961-4775-A66A-5EFCAB56B3F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFFBF378-FD51-41BC-B090-18B7EAACC2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
