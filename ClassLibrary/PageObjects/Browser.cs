@@ -24,6 +24,7 @@ namespace ClassLibrary.PageObjects
 
         public static void Goto(string url)
         {
+            webDriver = new FirefoxDriver();
             webDriver.Url = url;
         }
 
