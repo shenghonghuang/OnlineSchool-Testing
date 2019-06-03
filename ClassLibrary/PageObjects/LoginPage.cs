@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,14 +53,8 @@ namespace ClassLibrary.PageObjects
 
         public void CheckTitleAndUrl()
         {
-            if (Title == Browser.Driver_Web.Title && PageUrl == Browser.Driver_Web.Url)
-            {
-                Console.WriteLine("Successful");
-            }
-            else
-            {
-                Console.WriteLine("Unsuccessful");
-            }
+            Assert.AreEqual(Browser.Driver_Web.Title, Title);
+            Assert.AreEqual(Browser.Driver_Web.Url, PageUrl);
         }
     }
 }
