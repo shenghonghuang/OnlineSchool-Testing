@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace ClassLibrary.PageObjects
         public void ChoosePictureAndClickOpen()
         {
             SendKeys.SendWait(@"d:\5.jpg");
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
             SendKeys.SendWait(@"{Enter}");
         }
 
