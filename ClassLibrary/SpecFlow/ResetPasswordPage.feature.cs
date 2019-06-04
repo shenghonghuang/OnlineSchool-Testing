@@ -78,7 +78,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.Given("I am in home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.Then("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click LINK of LOGIN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
  testRunner.Then("I click LINK of RESET PASSWORD", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 11
@@ -103,7 +103,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 17
  testRunner.Given("I am in home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 18
- testRunner.Then("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click LINK of LOGIN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 19
  testRunner.Then("I click LINK of RESET PASSWORD", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 20

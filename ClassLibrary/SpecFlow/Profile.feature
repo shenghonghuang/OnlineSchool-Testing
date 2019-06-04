@@ -6,8 +6,8 @@
 @Update Avatar Icon
 Scenario: Choose and upload a new avatar icon
 	Given I am in home page
-	Then I click login
-	Then I input valid username and password, and make sure i have checked remember me
+	Then I click LINK of LOGIN
+	Then I input valid username and password, and make sure i have checked REMEMBER ME
 	Then I can see the avatar on home page
 	Then I move mouse on the avatar
 	Then I click PERSONAL SETTINGS

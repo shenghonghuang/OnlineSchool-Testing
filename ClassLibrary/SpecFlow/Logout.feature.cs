@@ -76,9 +76,9 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.Given("I am in home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.Then("I click login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click LINK of LOGIN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
- testRunner.Then("I input valid username and password, and make sure i have checked remember me", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I input valid username and password, and make sure i have checked REMEMBER ME", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 11
  testRunner.Then("I can see the avatar on home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 12

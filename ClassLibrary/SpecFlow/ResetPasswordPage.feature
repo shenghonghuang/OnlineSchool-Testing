@@ -6,7 +6,7 @@
 @Wrong format
 Scenario: Use error format Email
 	Given I am in home page
-	Then I click login
+	Then I click LINK of LOGIN
 	Then I click LINK of RESET PASSWORD
 	Then I input a error format Email
 	Then I click BUTTON of RESET PASSWORD button
@@ -15,7 +15,7 @@ Scenario: Use error format Email
 @Nonexistent
 Scenario: Use nonexistent Email
 	Given I am in home page
-	Then I click login
+	Then I click LINK of LOGIN
 	Then I click LINK of RESET PASSWORD
 	Then I input a nonexistent Email
 	Then I click BUTTON of RESET PASSWORD button
