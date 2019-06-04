@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\ResetPasswordPage.cs" />
     <Compile Include="PageObjects\RegisterPage.cs" />
     <Compile Include="PageObjects\ProfilePage.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
@@ -103,6 +104,12 @@
       <DependentUpon>Register.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\RegisterSteps.cs" />
+    <Compile Include="SpecFlow\ResetPasswordPage.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResetPasswordPage.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SpecFlow\ResetPasswordPageSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -122,6 +129,10 @@
     <None Include="SpecFlow\Register.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Register.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SpecFlow\ResetPasswordPage.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ResetPasswordPage.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

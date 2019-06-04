@@ -56,5 +56,11 @@ namespace ClassLibrary.PageObjects
             Assert.AreEqual(Browser.Driver_Web.Title, Title);
             Assert.AreEqual(Browser.Driver_Web.Url, PageUrl);
         }
+
+        public void ClickResetPassword()
+        {
+            webElement = Browser.Driver_SearchContext.FindElement(By.LinkText("找回密码"));
+            webElement.Click();
+        }
     }
 }

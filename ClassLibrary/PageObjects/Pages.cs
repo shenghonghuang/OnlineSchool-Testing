@@ -48,5 +48,15 @@ namespace ClassLibrary.PageObjects
                 return registerPage;
             }
         }
+
+        public static ResetPasswordPage ResetPasswordPage
+        {
+            get
+            {
+                var resetPasswordPage = new ResetPasswordPage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, resetPasswordPage);
+                return resetPasswordPage;
+            }
+        }
     }
 }
