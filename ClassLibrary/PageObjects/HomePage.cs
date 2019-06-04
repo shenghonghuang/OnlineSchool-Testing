@@ -55,5 +55,11 @@ namespace ClassLibrary.PageObjects
             webElement = Browser.Driver_Web.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[1]/ul/li[3]/a"));
             webElement.Click();
         }
+
+        public void ClickRegister()
+        {
+            webElement = Browser.Driver_Web.FindElement(By.XPath("/html/body/div[1]/header/nav/div/ul/li[3]/a"));
+            webElement.Click();
+        }
     }
 }

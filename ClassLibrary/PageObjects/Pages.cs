@@ -38,5 +38,15 @@ namespace ClassLibrary.PageObjects
                 return profilePage;
             }
         }
+
+        public static RegisterPage RegisterPage
+        {
+            get
+            {
+                var registerPage = new RegisterPage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, registerPage);
+                return registerPage;
+            }
+        }
     }
 }

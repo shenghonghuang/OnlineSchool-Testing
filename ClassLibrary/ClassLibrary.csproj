@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\RegisterPage.cs" />
     <Compile Include="PageObjects\ProfilePage.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="SpecFlow\Login.feature.cs">
@@ -96,6 +97,12 @@
       <DependentUpon>Profile.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\ProfileSteps.cs" />
+    <Compile Include="SpecFlow\Register.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Register.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SpecFlow\RegisterSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -111,6 +118,10 @@
     <None Include="SpecFlow\Profile.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Profile.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SpecFlow\Register.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Register.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

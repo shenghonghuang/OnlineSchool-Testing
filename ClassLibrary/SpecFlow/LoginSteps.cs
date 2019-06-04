@@ -49,5 +49,10 @@ namespace ClassLibrary_Specflow
             Browser.Close();
         }
 
+        [Then(@"I click register")]
+        public void ThenIClickRegister()
+        {
+            Pages.HomePage.ClickRegister();
+        }
     }
 }
