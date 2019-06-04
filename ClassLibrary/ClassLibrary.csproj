@@ -73,9 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\PersonalSettings\PersonalSettingsMenu.cs" />
     <Compile Include="PageObjects\ResetPasswordPage.cs" />
     <Compile Include="PageObjects\RegisterPage.cs" />
-    <Compile Include="PageObjects\ProfilePage.cs" />
+    <Compile Include="PageObjects\PersonalSettings\AvatarSettingsPage.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="SpecFlow\Login.feature.cs">
       <DependentUpon>Login.feature</DependentUpon>
@@ -92,12 +93,13 @@
       <DependentUpon>Logout.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\LogoutSteps.cs" />
-    <Compile Include="SpecFlow\Profile.feature.cs">
+    <Compile Include="SpecFlow\PersonalSettings\AvatarSettings.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Profile.feature</DependentUpon>
+      <DependentUpon>AvatarSettings.feature</DependentUpon>
     </Compile>
-    <Compile Include="SpecFlow\ProfileSteps.cs" />
+    <Compile Include="SpecFlow\PersonalSettings\AvatarSettingsSteps.cs" />
+    <Compile Include="SpecFlow\PersonalSettings\PersonalSettingsMenuSteps.cs" />
     <Compile Include="SpecFlow\Register.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -122,9 +124,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Logout.feature.cs</LastGenOutput>
     </None>
-    <None Include="SpecFlow\Profile.feature">
+    <None Include="SpecFlow\PersonalSettings\AvatarSettings.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Profile.feature.cs</LastGenOutput>
+      <LastGenOutput>AvatarSettings.feature.cs</LastGenOutput>
     </None>
     <None Include="SpecFlow\Register.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

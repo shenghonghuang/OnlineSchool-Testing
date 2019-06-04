@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ClassLibrary.SpecFlow
+namespace ClassLibrary.SpecFlow.PersonalSettings
 {
     using TechTalk.SpecFlow;
     
@@ -18,20 +18,20 @@ namespace ClassLibrary.SpecFlow
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Profile")]
-    public partial class ProfileFeature
+    [NUnit.Framework.DescriptionAttribute("AvatarSettings")]
+    public partial class AvatarSettingsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Profile.feature"
+#line 1 "AvatarSettings.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Profile", "\tIn order to personalization\r\n\tAs a user\r\n\tI want to edit my profile", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AvatarSettings", "\tIn order to personalization\r\n\tAs a user\r\n\tI want to edit my profile", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,16 +64,14 @@ namespace ClassLibrary.SpecFlow
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Choose and upload a new avatar icon")]
+        [NUnit.Framework.DescriptionAttribute("Update AVATAR")]
         [NUnit.Framework.CategoryAttribute("Update")]
         [NUnit.Framework.CategoryAttribute("Avatar")]
-        [NUnit.Framework.CategoryAttribute("Icon")]
-        public virtual void ChooseAndUploadANewAvatarIcon()
+        public virtual void UpdateAVATAR()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Choose and upload a new avatar icon", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Update AVATAR", new string[] {
                         "Update",
-                        "Avatar",
-                        "Icon"});
+                        "Avatar"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
@@ -89,7 +87,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.Then("I click PERSONAL SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 14
- testRunner.Then("I click AVATAR SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click [MENU] AVATAR SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 15
  testRunner.Then("I click UPLOAD NEW AVATAR", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 16

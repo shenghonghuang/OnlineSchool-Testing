@@ -2,21 +2,15 @@
 using System;
 using TechTalk.SpecFlow;
 
-namespace ClassLibrary.SpecFlow
+namespace ClassLibrary.SpecFlow.PersonalSettings
 {
     [Binding]
-    public class ProfileSteps
+    public class AvatarSettingsSteps
     {
         [Then(@"I click PERSONAL SETTINGS")]
         public void ThenIClickPERSONALSETTINGS()
         {
             Pages.HomePage.ClickPersonalSettings();
-        }
-
-        [Then(@"I click AVATAR SETTINGS")]
-        public void ThenIClickAVATARSETTINGS()
-        {
-            Pages.ProfilePage.ClickAvatarSettings();
         }
 
         [Then(@"I click UPLOAD NEW AVATAR")]

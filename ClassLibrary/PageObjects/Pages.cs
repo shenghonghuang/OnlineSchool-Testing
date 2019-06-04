@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium.Support.PageObjects;
+﻿using ClassLibrary.PageObjects.PersonalSettings;
+using OpenQA.Selenium.Support.PageObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,11 +30,21 @@ namespace ClassLibrary.PageObjects
             }
         }
 
-        public static ProfilePage ProfilePage
+        public static PersonalSettingsMenu PersonalSettingsMenu
         {
             get
             {
-                var profilePage = new ProfilePage();
+                var personalSettingsMenu = new PersonalSettingsMenu();
+                PageFactory.InitElements(Browser.Driver_SearchContext, personalSettingsMenu);
+                return personalSettingsMenu;
+            }
+        }
+
+        public static AvatarSettingsPage ProfilePage
+        {
+            get
+            {
+                var profilePage = new AvatarSettingsPage();
                 PageFactory.InitElements(Browser.Driver_SearchContext, profilePage);
                 return profilePage;
             }

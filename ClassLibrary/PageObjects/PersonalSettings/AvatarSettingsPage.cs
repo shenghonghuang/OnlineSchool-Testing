@@ -10,17 +10,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClassLibrary.PageObjects
+namespace ClassLibrary.PageObjects.PersonalSettings
 {
-    public class ProfilePage
+    public class AvatarSettingsPage
     {
         private IWebElement webElement = null;
-
-        public void ClickAvatarSettings()
-        {
-            webElement = Browser.Driver_Web.FindElement(By.XPath("/html/body/div[1]/div[1]/div/div[1]/div/ul/li[3]/a"));
-            webElement.Click();
-        }
 
         public void ClickUploadNewAvatar()
         {
