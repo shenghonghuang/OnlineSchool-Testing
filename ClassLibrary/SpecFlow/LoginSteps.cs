@@ -13,14 +13,14 @@ namespace ClassLibrary_Specflow
             Pages.HomePage.Goto();
         }
 
-        [Then(@"I click login")]
-        public void ThenIClickLogin()
+        [Then(@"I click LINK of LOGIN")]
+        public void ThenIClickLINKOfLOGIN()
         {
             Pages.HomePage.ClickLogin();
         }
 
-        [Then(@"I input valid username and password, and make sure i have checked remember me")]
-        public void ThenIInputValidUsernameAndPasswordAndMakeSureIHaveCheckedRememberMe()
+        [Then(@"I input valid username and password, and make sure i have checked REMEMBER ME")]
+        public void ThenIInputValidUsernameAndPasswordAndMakeSureIHaveCheckedREMEMBERME()
         {
             Pages.LoginPage.LoginWithAccount("test001", "Test1234");
         }

@@ -6,8 +6,8 @@
 @LoginSuccessful
 Scenario: LoginWithValidInfo
 	Given I am in home page
-	Then I click login
-	Then I input valid username and password, and make sure i have checked remember me
+	Then I click LINK of LOGIN
+	Then I input valid username and password, and make sure i have checked REMEMBER ME
 	Then I can see the avatar on home page
 	Then I close the browser
 
@@ -15,7 +15,7 @@ Scenario: LoginWithValidInfo
 @LoginUnsuccessful
 Scenario: LoginWithInValidInfo
 	Given I am in home page
-	Then I click login
+	Then I click LINK of LOGIN
 	Then I input invalid username and password
 	Then I can see the error notification on login page
 	Then I close the browser
