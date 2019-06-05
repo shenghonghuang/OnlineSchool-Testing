@@ -73,6 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\Management\ManagementPage.cs" />
+    <Compile Include="PageObjects\Management\Order\ClassOrderPage.cs" />
+    <Compile Include="PageObjects\Management\Order\OrderMenu.cs" />
+    <Compile Include="PageObjects\Management\Order\CourseOrderPage.cs" />
     <Compile Include="PageObjects\PersonalSettings\BasicInfoSettingsPage.cs" />
     <Compile Include="PageObjects\PersonalSettings\PersonalSettingsMenu.cs" />
     <Compile Include="PageObjects\ResetPasswordPage.cs" />
@@ -94,6 +98,19 @@
       <DependentUpon>Logout.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\LogoutSteps.cs" />
+    <Compile Include="SpecFlow\Management\Order\ClassOrder.feature.cs">
+      <DependentUpon>ClassOrder.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SpecFlow\Management\Order\CourseOrder.feature.cs">
+      <DependentUpon>CourseOrder.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SpecFlow\Management\Order\ClassOrderSteps.cs" />
+    <Compile Include="SpecFlow\Management\Order\CourseOrders.cs" />
+    <Compile Include="SpecFlow\Management\Order\OrderSteps.cs" />
     <Compile Include="SpecFlow\PersonalSettings\AvatarSettings.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -131,6 +148,14 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Logout.feature.cs</LastGenOutput>
     </None>
+    <None Include="SpecFlow\Management\Order\ClassOrder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ClassOrder.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SpecFlow\Management\Order\CourseOrder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CourseOrder.feature.cs</LastGenOutput>
+    </None>
     <None Include="SpecFlow\PersonalSettings\AvatarSettings.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AvatarSettings.feature.cs</LastGenOutput>
@@ -148,6 +173,7 @@
       <LastGenOutput>ResetPasswordPage.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

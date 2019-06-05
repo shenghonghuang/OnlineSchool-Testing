@@ -1,4 +1,6 @@
-﻿using ClassLibrary.PageObjects.PersonalSettings;
+﻿using ClassLibrary.PageObjects.Management;
+using ClassLibrary.PageObjects.Management.Order;
+using ClassLibrary.PageObjects.PersonalSettings;
 using OpenQA.Selenium.Support.PageObjects;
 
 namespace ClassLibrary.PageObjects
@@ -72,6 +74,46 @@ namespace ClassLibrary.PageObjects
                 var resetPasswordPage = new ResetPasswordPage();
                 PageFactory.InitElements(Browser.Driver_SearchContext, resetPasswordPage);
                 return resetPasswordPage;
+            }
+        }
+
+        public static ManagementPage ManagementPage
+        {
+            get
+            {
+                var managementPage = new ManagementPage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, managementPage);
+                return managementPage;
+            }
+        }
+
+        public static OrderMenu OrderMenu
+        {
+            get
+            {
+                var orderMenu = new OrderMenu();
+                PageFactory.InitElements(Browser.Driver_SearchContext, orderMenu);
+                return orderMenu;
+            }
+        }
+
+        public static CourseOrderPage CourseOrderPage
+        {
+            get
+            {
+                var courseOrderPage = new CourseOrderPage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, courseOrderPage);
+                return courseOrderPage;
+            }
+        }
+
+        public static ClassOrderPage ClassOrderPage
+        {
+            get
+            {
+                var classOrderPage = new ClassOrderPage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, classOrderPage);
+                return classOrderPage;
             }
         }
     }

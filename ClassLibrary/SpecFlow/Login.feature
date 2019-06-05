@@ -11,7 +11,6 @@ Scenario: LoginWithValidInfo
 	Then I can see the avatar on home page
 	Then I close the browser
 
-
 @LoginUnsuccessful
 Scenario: LoginWithInValidInfo
 	Given I am in home page

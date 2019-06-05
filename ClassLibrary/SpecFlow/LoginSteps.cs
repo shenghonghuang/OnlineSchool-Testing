@@ -53,5 +53,11 @@ namespace ClassLibrary_Specflow
         {
             Pages.HomePage.ClickRegister();
         }
+
+        [Then(@"I fill administrator account in \[TEXTBOX\|USERNAME], \[TEXTBOX\|PASSWORD] and click \[BUTTON\|LOGIN] on \[PAGE\|LOGIN]")]
+        public void ThenIFillAdministratorAccountInTEXTBOXUSERNAMETEXTBOXPASSWORDAndClickBUTTONLOGINOnPAGELOGIN()
+        {
+            Pages.LoginPage.LoginWithAccount("admin", "5EstafeyEtre");
+        }
     }
 }

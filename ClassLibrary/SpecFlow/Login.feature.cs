@@ -93,17 +93,17 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("LoginWithInValidInfo", new string[] {
                         "LoginUnsuccessful"});
-#line 16
+#line 15
 this.ScenarioSetup(scenarioInfo);
-#line 17
+#line 16
  testRunner.Given("I am in home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 18
+#line 17
  testRunner.Then("I click LINK of LOGIN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 19
+#line 18
  testRunner.Then("I input invalid username and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 20
+#line 19
  testRunner.Then("I can see the error notification on login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 21
+#line 20
  testRunner.Then("I close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
