@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
+    <Compile Include="PageObjects\PersonalSettings\BasicInfoSettingsPage.cs" />
     <Compile Include="PageObjects\PersonalSettings\PersonalSettingsMenu.cs" />
     <Compile Include="PageObjects\ResetPasswordPage.cs" />
     <Compile Include="PageObjects\RegisterPage.cs" />
@@ -99,6 +100,12 @@
       <DependentUpon>AvatarSettings.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\PersonalSettings\AvatarSettingsSteps.cs" />
+    <Compile Include="SpecFlow\PersonalSettings\BasicInfoSettings.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BasicInfoSettings.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SpecFlow\PersonalSettings\BasicInfoSettingsSteps.cs" />
     <Compile Include="SpecFlow\PersonalSettings\PersonalSettingsMenuSteps.cs" />
     <Compile Include="SpecFlow\Register.feature.cs">
       <AutoGen>True</AutoGen>
@@ -127,6 +134,10 @@
     <None Include="SpecFlow\PersonalSettings\AvatarSettings.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AvatarSettings.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SpecFlow\PersonalSettings\BasicInfoSettings.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BasicInfoSettings.feature.cs</LastGenOutput>
     </None>
     <None Include="SpecFlow\Register.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

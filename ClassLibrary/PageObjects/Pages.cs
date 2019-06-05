@@ -35,6 +35,16 @@ namespace ClassLibrary.PageObjects
             }
         }
 
+        public static BasicInfoSettingsPage BasicInfoSettingsPage
+        {
+            get
+            {
+                var basicInfoSettingsPage = new BasicInfoSettingsPage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, basicInfoSettingsPage);
+                return basicInfoSettingsPage;
+            }
+        }
+
         public static AvatarSettingsPage ProfilePage
         {
             get
