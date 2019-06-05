@@ -94,6 +94,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 17
  testRunner.Then("I can see [MESSAGE|BASIC INFORMATION SAVED SUCCESSFULLY] on [PAGE|BASIC INFO SETT" +
                     "INGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 18
+ testRunner.Then("I close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -105,31 +107,33 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Fill with invalid info", new string[] {
                         "Invalid"});
-#line 20
-this.ScenarioSetup(scenarioInfo);
 #line 21
- testRunner.Given("I am in home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 22
- testRunner.Then("I click LINK of LOGIN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("I am in home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 23
- testRunner.Then("I input valid username and password, and make sure i have checked REMEMBER ME", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click LINK of LOGIN", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 24
- testRunner.Then("I can see the avatar on home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I input valid username and password, and make sure i have checked REMEMBER ME", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 25
- testRunner.Then("I move mouse on the avatar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I can see the avatar on home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 26
- testRunner.Then("I click PERSONAL SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I move mouse on the avatar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 27
- testRunner.Then("I click [MENU|BASIC INFO SETTINGS] on [PAGE|PERSONAL SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click PERSONAL SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 28
+ testRunner.Then("I click [MENU|BASIC INFO SETTINGS] on [PAGE|PERSONAL SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 29
  testRunner.Then("I fill invalid info in [TEXTBOX|REAL_NAME], [TEXTBOX|ID_CARD], [TEXTBOX|PHONE], [" +
                     "TEXTBOX|TITLE], [TEXTBOX|WEBSITE], [TEXTBOX|QQ] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 29
- testRunner.Then("I click [BUTTON|SAVE] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 30
+ testRunner.Then("I click [BUTTON|SAVE] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 31
  testRunner.Then("I can see [ERROR MESSAGE|REAL_NAME], [ERROR MESSAGE|ID_CARD], [ERROR MESSAGE|PHON" +
                     "E], [ERROR MESSAGE|TITLE], [ERROR MESSAGE|WEBSITE], [ERROR MESSAGE|QQ] on [PAGE|" +
                     "BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 32
+ testRunner.Then("I close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -23,3 +23,4 @@ Scenario: View Course Orders
 	Then I click [BUTTON|SEARCH] ON [PAGE|COURSE ORDER]
 	Then I select COURSE NAME on [TEXTBOX|KEYWORD TYPE] on [PAGE|COURSE ORDER]
 	Then I click [BUTTON|SEARCH] ON [PAGE|COURSE ORDER]
+	Then I close the browser

@@ -15,3 +15,4 @@ Scenario: Login with invaild information
 	Then I can see error text about password
 	Then I input invalid captcha code
 	Then I can see error text about aptcha code
+	Then I close the browser

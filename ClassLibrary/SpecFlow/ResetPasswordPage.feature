@@ -11,6 +11,7 @@ Scenario: Use error format Email
 	Then I input a error format Email
 	Then I click BUTTON of RESET PASSWORD button
 	Then I can see the error notification for error format Email
+	Then I close the browser
 
 @Nonexistent
 Scenario: Use nonexistent Email
@@ -20,3 +21,4 @@ Scenario: Use nonexistent Email
 	Then I input a nonexistent Email
 	Then I click BUTTON of RESET PASSWORD button
 	Then I can see the error notification for nonexistent Email
+	Then I close the browser

@@ -15,3 +15,4 @@ Scenario: Update AVATAR
 	Then I click UPLOAD NEW AVATAR
 	Then I click a picture and click open
 	Then I click SAVE
+	Then I close the browser

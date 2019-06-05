@@ -112,6 +112,8 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.Then("I select COURSE NAME on [TEXTBOX|KEYWORD TYPE] on [PAGE|COURSE ORDER]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 25
  testRunner.Then("I click [BUTTON|SEARCH] ON [PAGE|COURSE ORDER]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 26
+ testRunner.Then("I close the browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

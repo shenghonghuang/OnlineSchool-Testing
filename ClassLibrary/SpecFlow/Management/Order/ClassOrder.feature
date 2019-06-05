@@ -23,3 +23,4 @@ Scenario: View Class Orders
 	Then I click [BUTTON|SEARCH] ON [PAGE|CLASS ORDER]
 	Then I select CLASS NUMBER on [TEXTBOX|KEYWORD TYPE] on [PAGE|CLASS ORDER]
 	Then I click [BUTTON|SEARCH] ON [PAGE|CLASS ORDER]
+	Then I close the browser
