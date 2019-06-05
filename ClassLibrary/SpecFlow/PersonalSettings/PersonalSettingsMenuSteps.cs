@@ -6,7 +6,7 @@ namespace ClassLibrary.SpecFlow.PersonalSettings
     [Binding]
     public class PersonalSettingsMenuSteps
     {
-        [Then(@"I click \[MENU \| BASIC INFO SETTINGS] on \[PAGE \| PERSONAL SETTINGS]")]
+        [Then(@"I click \[MENU\|BASIC INFO SETTINGS] on \[PAGE\|PERSONAL SETTINGS]")]
         public void ThenIClickMENUBASICINFOSETTINGSOnPAGEPERSONALSETTINGS()
         {
             Pages.PersonalSettingsMenu.ClickBasicInfoSettings();

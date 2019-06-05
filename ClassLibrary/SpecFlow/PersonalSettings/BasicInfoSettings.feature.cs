@@ -85,15 +85,15 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.Then("I click PERSONAL SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 14
- testRunner.Then("I click [MENU | BASIC INFO SETTINGS] on [PAGE | PERSONAL SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click [MENU|BASIC INFO SETTINGS] on [PAGE|PERSONAL SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 15
- testRunner.Then("I fill valid info in [TEXTBOX | REALNAME, ID, PHONE, TITLE, WEBSITE, QQ] on [PAGE" +
-                    " | BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I fill valid info in [TEXTBOX|REAL_NAME], [TEXTBOX|ID_CARD], [TEXTBOX|PHONE], [TE" +
+                    "XTBOX|TITLE], [TEXTBOX|WEBSITE], [TEXTBOX|QQ] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 16
- testRunner.Then("I click [BUTTON | SAVE] on [PAGE | BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click [BUTTON|SAVE] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 17
- testRunner.Then("I can see [MESSAGE | BASIC INFORMATION SAVED SUCCESSFULLY] on [PAGE | BASIC INFO " +
-                    "SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I can see [MESSAGE|BASIC INFORMATION SAVED SUCCESSFULLY] on [PAGE|BASIC INFO SETT" +
+                    "INGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -120,15 +120,16 @@ this.ScenarioSetup(scenarioInfo);
 #line 26
  testRunner.Then("I click PERSONAL SETTINGS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 27
- testRunner.Then("I click [MENU | BASIC INFO SETTINGS] on [PAGE | PERSONAL SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click [MENU|BASIC INFO SETTINGS] on [PAGE|PERSONAL SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 28
- testRunner.Then("I fill invalid info in [TEXTBOX | REALNAME, ID, PHONE, TITLE, WEBSITE, QQ] on [PA" +
-                    "GE | BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I fill invalid info in [TEXTBOX|REAL_NAME], [TEXTBOX|ID_CARD], [TEXTBOX|PHONE], [" +
+                    "TEXTBOX|TITLE], [TEXTBOX|WEBSITE], [TEXTBOX|QQ] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 29
- testRunner.Then("I click [BUTTON | SAVE] on [PAGE | BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click [BUTTON|SAVE] on [PAGE|BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 30
- testRunner.Then("I can see [MESSAGE | ERROR : INVALID REALNAME, ID, PHONE, TITLE, WEBSITE, QQ] on " +
-                    "[PAGE | BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I can see [ERROR MESSAGE|REAL_NAME], [ERROR MESSAGE|ID_CARD], [ERROR MESSAGE|PHON" +
+                    "E], [ERROR MESSAGE|TITLE], [ERROR MESSAGE|WEBSITE], [ERROR MESSAGE|QQ] on [PAGE|" +
+                    "BASIC INFO SETTINGS]", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
