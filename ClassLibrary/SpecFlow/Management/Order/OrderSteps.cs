@@ -13,12 +13,6 @@ namespace ClassLibrary.SpecFlow.Management.Order
             Pages.HomePage.ClickManagement();
         }
 
-        [Then(@"I click \[MENU\|ORDER] ON \[PAGE\|MANAGEMENT]")]
-        public void ThenIClickMENUORDERONPAGEMANAGEMENT()
-        {
-            Pages.ManagementPage.ClickOrder();
-        }
-
         [Then(@"I click \[MENU\|COURSE ORDER] ON \[MENU\|ORDER]")]
         public void ThenIClickMENUCOURSEORDERONPAGEORDER()
         {

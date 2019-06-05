@@ -98,6 +98,13 @@
       <DependentUpon>Logout.feature</DependentUpon>
     </Compile>
     <Compile Include="SpecFlow\LogoutSteps.cs" />
+    <Compile Include="SpecFlow\Management\ManagementMenuSteps.cs" />
+    <Compile Include="SpecFlow\Management\Operation\Article.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Article.feature</DependentUpon>
+    </Compile>
+    <Compile Include="SpecFlow\Management\Operation\OperationMenuSteps.cs" />
     <Compile Include="SpecFlow\Management\Order\ClassOrder.feature.cs">
       <DependentUpon>ClassOrder.feature</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -147,6 +154,10 @@
     <None Include="SpecFlow\Logout.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Logout.feature.cs</LastGenOutput>
+    </None>
+    <None Include="SpecFlow\Management\Operation\Article.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Article.feature.cs</LastGenOutput>
     </None>
     <None Include="SpecFlow\Management\Order\ClassOrder.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
