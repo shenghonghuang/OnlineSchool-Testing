@@ -42,5 +42,12 @@ namespace ClassLibrary.SpecFlow.Management.Operation
         {
             Pages.ArticlePage.SelectStatus("已发布");
         }
+
+        [Then(@"I click rectangular on \[DROPDOWNLIST\|STATUS] and select a status on \[DROPDOWNLIST\|STATUS] on \[PAGE\|ARTICLE]")]
+        public void ThenIClickRectangularOnDROPDOWNLISTSTATUSAndSelectAStatusOnDROPDOWNLISTSTATUSOnPAGEARTICLE()
+        {
+            Pages.ArticlePage.ChangeStatus(1);
+        }
+
     }
 }

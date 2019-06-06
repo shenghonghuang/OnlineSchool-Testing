@@ -52,5 +52,15 @@ namespace ClassLibrary.PageObjects.Management.Operation
             var selectElement = new SelectElement(dropdownlist);
             selectElement.SelectByText(text);
         }
+
+        public void ChangeStatus(int sequence)
+        {
+            string article = "/html/body/div[2]/div/div[2]/div[2]/table/tbody/tr[" + sequence + "]/td[7]/div/a[2]";
+            string operate = "/html/body/div[2]/div/div[2]/div[2]/table/tbody/tr[" + sequence + "]/td[7]/div/ul/li[1]/a";
+            webElement = Browser.Driver_Web.FindElement(By.XPath(article));
+            webElement.Click();
+            webElement = Browser.Driver_Web.FindElement(By.XPath(operate));
+            webElement.Click();
+        }
     }
 }

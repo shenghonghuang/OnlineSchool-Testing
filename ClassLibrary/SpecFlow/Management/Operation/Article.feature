@@ -1,10 +1,10 @@
 ﻿Feature: Article
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	In order to manage articles
+	As a adminnistator
+	I want to search and edit the articles
 
-@mytag
-Scenario: Add two numbers
+@Search
+Scenario: Search Article
 	Given I am in home page
 	Then I click LINK of LOGIN
 	Then I fill administrator account in [TEXTBOX|USERNAME], [TEXTBOX|PASSWORD] and click [BUTTON|LOGIN] on [PAGE|LOGIN]
@@ -22,3 +22,14 @@ Scenario: Add two numbers
 	Then I click [BUTTON|SEARCH] on [PAGE|ARTICLE]
 	Then I select {PUBLISHED} on [DROPDOWNLIST|STATUS] on [PAGE|ARTICLE]
 	Then I click [BUTTON|SEARCH] on [PAGE|ARTICLE]
+
+@Status
+Scenario: Change Status
+	Given I am in home page
+	Then I click LINK of LOGIN
+	Then I fill administrator account in [TEXTBOX|USERNAME], [TEXTBOX|PASSWORD] and click [BUTTON|LOGIN] on [PAGE|LOGIN]
+	Then I move mouse on the avatar
+	Then I click [MENU|MANAGEMENT] ON [PAGE|HOME]
+	Then I click [MENU|OPERATION] on [PAGE|MANAGEMENT]
+	Then I click [MENU|ARTICLE] on [PAGE|OPERATION]
+	Then I click rectangular on [DROPDOWNLIST|STATUS] and select a status on [DROPDOWNLIST|STATUS] on [PAGE|ARTICLE]
