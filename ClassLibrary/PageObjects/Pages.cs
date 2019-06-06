@@ -1,4 +1,5 @@
 ﻿using ClassLibrary.PageObjects.Management;
+using ClassLibrary.PageObjects.Management.Operation;
 using ClassLibrary.PageObjects.Management.Order;
 using ClassLibrary.PageObjects.PersonalSettings;
 using OpenQA.Selenium.Support.PageObjects;
@@ -114,6 +115,27 @@ namespace ClassLibrary.PageObjects
                 var classOrderPage = new ClassOrderPage();
                 PageFactory.InitElements(Browser.Driver_SearchContext, classOrderPage);
                 return classOrderPage;
+            }
+        }
+
+        // Management - Operation
+        public static OperationMenu OperationMenu
+        {
+            get
+            {
+                var operationMenu = new OperationMenu();
+                PageFactory.InitElements(Browser.Driver_SearchContext, operationMenu);
+                return operationMenu;
+            }
+        }
+
+        public static ArticlePage ArticlePage
+        {
+            get
+            {
+                var articlePage = new ArticlePage();
+                PageFactory.InitElements(Browser.Driver_SearchContext, articlePage);
+                return articlePage;
             }
         }
     }

@@ -74,7 +74,9 @@
   <ItemGroup>
     <Compile Include="PageObjects\Browser.cs" />
     <Compile Include="PageObjects\Management\ManagementPage.cs" />
+    <Compile Include="PageObjects\Management\Operation\ArticlePage.cs" />
     <Compile Include="PageObjects\Management\Order\ClassOrderPage.cs" />
+    <Compile Include="PageObjects\Management\Operation\OperationMenu.cs" />
     <Compile Include="PageObjects\Management\Order\OrderMenu.cs" />
     <Compile Include="PageObjects\Management\Order\CourseOrderPage.cs" />
     <Compile Include="PageObjects\PersonalSettings\BasicInfoSettingsPage.cs" />
@@ -104,6 +106,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Article.feature</DependentUpon>
     </Compile>
+    <Compile Include="SpecFlow\Management\Operation\ArticleSteps.cs" />
     <Compile Include="SpecFlow\Management\Operation\OperationMenuSteps.cs" />
     <Compile Include="SpecFlow\Management\Order\ClassOrder.feature.cs">
       <DependentUpon>ClassOrder.feature</DependentUpon>

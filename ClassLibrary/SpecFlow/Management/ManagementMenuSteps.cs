@@ -16,7 +16,7 @@ namespace ClassLibrary.SpecFlow.Management
         [Then(@"I click \[MENU\|OPERATION] on \[PAGE\|MANAGEMENT]")]
         public void ThenIClickMENUOPERATIONOnPAGEMANAGEMENT()
         {
-
+            Pages.ManagementPage.ClickOperation();
         }
     }
 }
